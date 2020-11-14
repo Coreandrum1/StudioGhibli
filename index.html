@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link  rel="icon"   href="favicon.png" type="image/png" />
     <!-- Animations -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -22,6 +23,7 @@
 
         $(document).ready(function(){
          $('.parallax').parallax();
+         $('.fixed-action-btn').floatingActionButton();
          AOS.init();
         });
 
@@ -45,6 +47,12 @@
     <title>Studio Ghibli</title>
 </head>
 <body>
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large deep-orange lighten-3" href="#home">
+          <i class="large material-icons">arrow_upward</i>
+        </a>
+      </div>
 
     <nav class="navbar z-depth-0">
         <div class="container">
@@ -199,6 +207,6 @@ data-aos-duration="1500">
 <footer class="footer" id="footer">
     <p>Francisco Sabino López Escamilla</p>
     <p>Diseño de interfaces gráficas</p>
-
+    <i class="material-icons">add</i>
   </footer>
 </html>
